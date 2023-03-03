@@ -51,23 +51,6 @@
   margin: 24px 0;
 }
 
-.categoryUnit::before {
-  content: "";
-  position: absolute;
-  right: 205px;
-  top: 60%;
-  transform: translateY(-50%);
-  width: 528px;
-  height: 1px;
-  background: linear-gradient(
-    to bottom,
-    var(--color-gray-600) 0%,
-    var(--color-gray-600) 50%,
-    transparent 50%,
-    transparent 100%
-  );
-}
-
 .houseware {
   border-color: var(--color-brown-300);
 }
