@@ -1,1 +1,132 @@
 /* 카테고리별 추천 광고상품 */
+/* 헤더 */
+.header {
+  width: 1020px;
+  margin: 100px auto 48px;
+}
+
+.brand {
+  margin: 0;
+}
+
+.brand__link {
+  display: block;
+}
+
+/* 섹션 */
+.category {
+  width: 1020px;
+  margin: 0 auto;
+}
+
+/* 섹션 헤드라인 */
+.category__headline {
+  display: flex;
+  flex-flow: column nowrap;
+}
+
+.category__title {
+  margin: 0;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.category__title--accent {
+  color: var(--color-blue-600);
+}
+
+.category__emTitle {
+  order: -1;
+  font-size: 16px;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* 카테고리 */
+.categoryUnit {
+  display: flex;
+  flex-flow: row nowrap;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  margin: 24px 0;
+}
+
+.houseware {
+  border-color: var(--color-brown-300);
+}
+
+.kitchenware {
+  border-color: var(--color-green-700);
+}
+
+.houseware .categoryUnit__title,
+.houseware .hashTag__link {
+  color: var(--color-brown-300);
+}
+
+.kitchenware .categoryUnit__title,
+.kitchenware .hashTag__link {
+  color: var(--color-green-700);
+}
+
+.categoryUnit__group:nth-child(1) {
+  flex-grow: 1;
+  display: flex;
+  flex-flow: column nowrap;
+  padding: 48px 26px 32px 24px;
+}
+
+.categoryUnit__group:nth-child(2) {
+  width: 320px;
+}
+
+.categoryUnit__group:nth-child(3) {
+  width: 528px;
+}
+
+/* categoryUnit 헤드라인 */
+
+.categoryUnit__headline {
+  flex-grow: 1;
+}
+
+.categoryUnit__title {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 0 8px;
+}
+
+.categoryUnit__goLink {
+  background: url(./../../assets/icon/angle-right-default.svg) no-repeat 100%
+    50%;
+  padding-right: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--color-gray-700);
+}
+
+/* 해시테그 */
+.hashTag__title {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.hashTag__list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.hashTag__item {
+  margin-top: 12px;
+}
+
+.hashTag__link {
+  display: inline-block;
+  padding: 6px 10px;
+  border: 1px solid var(--color-gray-400);
+  font-size: 12px;
+  line-height: 1.2;
+}
